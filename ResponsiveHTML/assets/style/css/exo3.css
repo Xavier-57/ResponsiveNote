@@ -1,0 +1,79 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section{
+    padding: 10px;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.first{
+    font-size: 4rem;
+}
+
+sup{
+    font-size: 2rem;
+}
+
+.container-infos{
+    display: flex;
+    justify-content: space-between;
+}
+
+#other-infos{
+    font-size: larger;
+}
+
+.other-days{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bold{
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.temperature{
+    display: grid;
+    place-items: center;
+    gap: 5px;
+}
+
+.vent{
+    display: grid;
+    place-items: center;
+}
+
+@media (width > 800px) {
+    .other-days{
+        display: flex;
+        flex-direction: column;
+    }
+    hr{
+        display: none;
+    }
+    .other-days-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .temperature{
+        display: flex;
+        justify-content: center;
+        font-size: 1.3rem;
+    }
+}
